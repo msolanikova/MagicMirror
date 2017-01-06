@@ -12,3 +12,8 @@
  body {
  	
  }
+
+.item  {
+	margin-top: 15px;
+	text-align: right;
+}

@@ -1,4 +1,4 @@
-/* global Module */
+﻿/* global Module */
 
 /* Magic Mirror
  * Module: WeatherForecast
@@ -136,14 +136,14 @@ Module.register("weatherforecast",{
 			iconCell.appendChild(icon);
 
 			var maxTempCell = document.createElement("td");
-			maxTempCell.innerHTML = forecast.maxTemp;
+			maxTempCell.innerHTML = forecast.maxTemp + ' &deg;C';
 			maxTempCell.className = "align-right bright max-temp";
 			row.appendChild(maxTempCell);
 
-			var minTempCell = document.createElement("td");
-			minTempCell.innerHTML = forecast.minTemp;
+			/*var minTempCell = document.createElement("td");
+			minTempCell.innerHTML = forecast.minTemp + ' &deg;C';
 			minTempCell.className = "align-right min-temp";
-			row.appendChild(minTempCell);
+			row.appendChild(minTempCell);*/
 
 			if (this.config.showRainAmount) {
 				var rainCell = document.createElement("td");
