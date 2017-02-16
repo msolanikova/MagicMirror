@@ -52,7 +52,7 @@ var config = {
 		},
 		{
 			module: 'weatherforecast',
-			position: 'top_right',
+			position: 'bottom_left',
 			header: 'Predpoveď pre',
 			config: {
 				location: 'Kosice',
