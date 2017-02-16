@@ -134,12 +134,12 @@ Module.register("multinewsfeed",{
 
 			for(var i = 0; i < this.config.itemsDisplayed; i++) {
 				var title = document.createElement("div");
-				title.className = "bright small light item";
+				title.className = "bright medium light item";
 				title.innerHTML = this.newsItems[this.activeItem + i].title;
 				
 				if (this.config.showDescription) {
 					var description = document.createElement("div");
-					description.className = "xsmall light";
+					description.className = "small light";
 					description.innerHTML = this.newsItems[this.activeItem + i].description;
 					title.appendChild(description);
 				}
