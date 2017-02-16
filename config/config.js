@@ -76,7 +76,7 @@ var config = {
 						encoding: 'cp1250'
 					}
 				],
-				showDescription: true,
+				showDescription: false,
 				showPublishDate: true
 			}
 		},
