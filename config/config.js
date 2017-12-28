@@ -71,9 +71,10 @@ var config = {
 						title: "sme.sk",
 						//url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
 						url: "http://rss.sme.sk/rss/rss.asp?id=frontpage",
+                        //url: "https://www.zive.cz/rss/sc-47/",
 						//url: "http://www.spiegel.de/schlagzeilen/index.rss",
 						//url: "http://spravy.pravda.sk/rss/xml/s-obrazkom/",
-						encoding: 'cp1250'
+						encoding: 'UTF-8'
 					}
 				],
 				showDescription: false,
