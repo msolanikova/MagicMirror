@@ -135,7 +135,8 @@ Module.register("multinewsfeed",{
 			for(var i = 0; i < this.config.itemsDisplayed; i++) {
 				var title = document.createElement("div");
 				title.className = "bright smallmedium light item";
-				title.innerHTML = '> ' + this.newsItems[this.activeItem + i].title;
+                var index = (this.activeItem + i) % this.newsItems.length;
+				title.innerHTML = '> ' + this.newsItems[index].title;
 				
 				if (this.config.showDescription) {
 					var description = document.createElement("div");
@@ -145,7 +146,6 @@ Module.register("multinewsfeed",{
 				}
 				wrapper.appendChild(title);
 			}
-
 
 		} else {
 			wrapper.innerHTML = this.translate("LOADING");
@@ -176,6 +176,7 @@ Module.register("multinewsfeed",{
 	 */
 	generateFeed: function(feeds) {
 		var newsItems = [];
+            
 		for (var feed in feeds) {
 			var feedItems = feeds[feed];
 			if (this.subscribedToFeed(feed)) {
