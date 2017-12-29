@@ -1,6 +1,6 @@
 sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart
 #add following line to the bottom:
-@/usr/bin/chromium-browser --kiosk http://localhost:8080
+@/usr/bin/chromium-browser --kiosk --noerrdialogs --disable-session-crashed-bubble --disable-infobar --incognito http://localhost:8080
 
 # then install magic mirror service
 sudo systemctl enable magicmirror.service
