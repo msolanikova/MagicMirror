@@ -47,7 +47,8 @@ var config = {
 			config: {
 				location: 'Kosice',
 				locationID: '724443',  //ID from http://www.openweathermap.org
-				appid: 'be60c2f6d060e6327a6afed2e510418f'
+				appid: 'be60c2f6d060e6327a6afed2e510418f',
+                useBeaufort: false
 			}
 		},
 		{

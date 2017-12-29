@@ -87,7 +87,7 @@ Module.register("currentweather",{
 	// Define start sequence.
 	start: function() {
 		Log.info("Starting module: " + this.name);
-
+        
 		// Set locale.
 		moment.locale(config.language);
 
@@ -116,7 +116,7 @@ Module.register("currentweather",{
 		small.appendChild(windIcon);
 
 		var windSpeed = document.createElement("span");
-		windSpeed.innerHTML = " " + this.windSpeed;
+		windSpeed.innerHTML = " " + this.windSpeed + "m/s ";
 		small.appendChild(windSpeed);
 
 		if (this.config.showWindDirection) {
@@ -308,7 +308,7 @@ Module.register("currentweather",{
 		if (this.config.useBeaufort){
 			this.windSpeed = this.ms2Beaufort(this.roundValue(data.wind.speed));
 		}else {
-			this.windSpeed = parseFloat(data.wind.speed).toFixed(0);
+			this.windSpeed = parseFloat(data.wind.speed);
 		}
 
 
